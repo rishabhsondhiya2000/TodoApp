@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(214, 214, 214);
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.box{
+    background-color: white;
+    width: 700px;
+    min-height: 500px;
+    margin: auto;
+    margin-top: 6%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 30px;
+    padding-top: 10px;
+    box-shadow: 8px 9px 20px 3px rgb(3, 3, 3);
+}
+.add-box{
+    margin: 25px 0;
+}
+.add-box input{
+    width: 480px;
+    height: 35px;
+    padding-left: 7px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 1px solid #656565;
+    box-shadow: 0px 0px 13px grey;
+}
+.add-box button{
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    background-color: #1b7cd0;
+    color: white;
+    border: 0;;
+    cursor: pointer;
+}
+
+.add-box button:hover{
+    box-shadow: 0px 0px 13px rgb(25, 84, 133);
+}
+
+.show-box{
+    width: 590px;
+    margin-bottom: 5%;
+}
+
+.list li{
+    border: 0;
+    border-radius: 10px;
+    list-style: none;
+    padding: 15px 0px;
+    font-size: 17px;
+    display: flex;
+}
+.list li:hover{
+    box-shadow: 0px 0px 13px rgb(3, 3, 3);
+}
+
+.list li:nth-child(2n+0){
+    background-color: rgb(204, 204, 204);
+}
+.list li:nth-child(2n+1){
+    background-color: rgb(234, 250, 255);
+}
+
+
+.title{
+    border: 0;
+    font-size: 16px;
+    padding: 0 10px;
+    width: 510px;
+    background: transparent;
+    cursor: auto;
+}
+.edit{
+  margin: 0 10px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+.delete{
+    margin: 0 7px;
+}
+#heading{
+    color: #2638b7;
+    font-size: 32px;
+}
+
+.update{
+    display: none;
+    background: transparent;
+    border: 0;;
+}
+.form1{
+    display: flex;
+}
+
