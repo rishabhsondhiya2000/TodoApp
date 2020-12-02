@@ -63,10 +63,10 @@
                       $input_id='input'.$row['id'];
                       $upd_id='upd'.$row['id'];
                 ?>
-                <li>
+                <li id='list<?php echo $row['id']?>'> <input type="checkbox" id='check<?php echo $row['id']?>'  onclick="disable('<?php echo $row['id']?>')">
                     <form class="form1" action="" method="post">
                         <input type="hidden" name="id" value="<?php echo $row['id']?>">
-                        <input name='text' id='<?php echo $input_id; ?>'  type="text" value="<?php echo $row['title']?>" class="title" readonly>
+                        <input  name='text' id='<?php echo $input_id; ?>'  type="text" value="<?php echo $row['title']?>" class="title" readonly>
                         <button type='submit' id='<?php echo $upd_id; ?>' name='update'  class="update">
                             <img src="images/check.png" alt="">
                         </button>
@@ -92,6 +92,23 @@
                  
                  document.getElementById(''+upd_id).style.display="block";
              }
+
+             function disable(id){
+                 let abc=document.getElementById('check'+id);
+                 
+                 if(abc.checked==true){
+                    let abcd=document.getElementById('input'+id);
+                    abcd.disabled=true;
+                    
+                    
+                 }
+                 else{
+                    let abcd=document.getElementById('input'+id);
+                    abcd.disabled=false;
+                    
+                 }
+             }
+             
 
     </script>
 </body> 
