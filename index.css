@@ -65,10 +65,12 @@ body{
 }
 
 .list li:nth-child(2n+0){
-    background-color: rgb(204, 204, 204);
+    background-color: rgb(167, 167, 167);
+    
 }
 .list li:nth-child(2n+1){
-    background-color: rgb(234, 250, 255);
+    background-color: rgb(240, 240, 240);
+    
 }
 
 
@@ -76,7 +78,7 @@ body{
     border: 0;
     font-size: 16px;
     padding: 0 10px;
-    width: 510px;
+    width: 480px;
     background: transparent;
     cursor: auto;
 }
@@ -98,6 +100,7 @@ body{
     display: none;
     background: transparent;
     border: 0;;
+    cursor: pointer;
 }
 .form1{
     display: flex;
